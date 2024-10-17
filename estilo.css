@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+
+.donut {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: bisque;
+    border: 15px;
+    position: absolute;
+    top: -60px;
+    left: calc(50% - 25px);
+    animation: fall 4s infinite;
+    top: -60px;
+    top: 100vh;
+}
+
