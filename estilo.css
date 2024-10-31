@@ -1,20 +1,26 @@
 body {
     margin: 0;
     overflow: hidden;
-    background-color: aquamarine;
+    background-color: #f0f0f0;
 }
 
 .donut {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #ffcc00;
     border-radius: 50%;
-    background-color: bisque;
-    border: 15px;
+    border: 20px solid white;
     position: absolute;
-    top: -60px;
-    left: calc(50% - 25px);
-    animation: fall 4s infinite;
-    top: -60px;
-    top: 100vh;
+    top: -100px; /* Começa fora da tela */
+    left: 0; /* Posição inicial */
+    animation: fall 4s linear forwards; /* Animação de queda */
 }
 
+@keyframes fall {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 100vh; /* Cai até a parte inferior da tela */
+    }
+}

@@ -1,10 +1,18 @@
-const donut =
-document.getelementbyid('donut');
-
-function.resetanimation() {
-    donut.style.animation = 'none';
-    donut.offsetjeight;
-    donut.style.animation = '30';
+function createDonut() {
+    const donut = document.createElement('div');
+    donut.classList.add('donut');
+    
+    // Posição aleatória
+    const leftPosition = Math.random() * (window.innerWidth - 100); // 100 é a largura da rosquinha
+    donut.style.left = leftPosition + 'px';
+    
+    document.getElementById('donut-container').appendChild(donut);
+    
+    // Remove a rosquinha após a animação
+    donut.addEventListener('animationend', () => {
+        donut.remove();
+    });
 }
 
-setinterval(resetanimation, 4000);
+// Cria uma nova rosquinha a cada segundo
+setInterval(createDonut, 1000);
