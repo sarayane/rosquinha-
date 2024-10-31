@@ -1,16 +1,16 @@
-function createDonut() {
-    const donut = document.createElement('div');
-    donut.classList.add('donut');
+function createrosca() {
+    const rosca = document.createElement('div');
+    rosca.classList.add('rosca');
     
     // Posição aleatória
     const leftPosition = Math.random() * (window.innerWidth - 100); // 100 é a largura da rosquinha
-    donut.style.left = leftPosition + 'px';
+    rosca.style.left = leftPosition + 'px';
     
-    document.getElementById('donut-container').appendChild(donut);
+    document.getElementById('rosca').appendChild(rosca);
     
     // Remove a rosquinha após a animação
-    donut.addEventListener('animationend', () => {
-        donut.remove();
+    rosca.addEventListener('animationend', () => {
+        rosca.remove();
     });
 }
 
