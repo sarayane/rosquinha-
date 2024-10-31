@@ -1,5 +1,24 @@
 /* Estilo para o corpo da página */
 body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+#donut {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.5s; /* Transição suave */
+}
+
+#donut-container {
+    position: center; /* Para posicionamento do donut */
+}
+
+body {
     font-family: Arial, sans-serif; 
     background-color: purple; 
 }

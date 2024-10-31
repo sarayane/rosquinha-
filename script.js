@@ -1,3 +1,13 @@
+const donut = document.getElementById('donut');
+
+donut.addEventListener('click', function() {
+    // Adiciona um efeito ao clicar na rosquinha
+    donut.style.transform = 'scale(1.1)';
+    setTimeout(() => {
+        donut.style.transform = 'scale(1)';
+    }, 300);
+});
+
 let intervalo;
 let emQueda = false;
 let pausado = false;
