@@ -1,10 +1,10 @@
-/* Estilo para o corpo da página */
+/* Estilo para o corpo da pagina */
 body {
     font-family: Arial, sans-serif; 
     background-color: palevioletred; 
 }
 
-/* Estilo para o topo da paágina */
+/* Estilo para o topo da pagina */
 #topo {
     position: fixed; 
     top: 10px; 
@@ -12,7 +12,7 @@ body {
     transform: translateX(-50%); 
     color: white;
     display: flex;
-    flex-direction: column; /* Empilha a informação e os botões */
+    flex-direction: column; /* Empilha a informacao e os botoes */
     align-items: center; /* Centraliza horizontalmente */
 }
 
