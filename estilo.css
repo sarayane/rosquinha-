@@ -1,22 +1,23 @@
-/* Estilo para o corpo da página */
 body {
     margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
-    background-color: white;
+    background-color: #f0f0f0;
 }
 
-#donut {
-    width: 100px; /* Ajuste o tamanho conforme necessário */
+#myImage {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
     height: auto; /* Mantém a proporção da imagem */
-    transition: transform 0.5s; /* Transição suave */
+    transition: transform 0.3s; /* Transição suave */
 }
 
-#donut-container {
-    position: center; /* Para posicionamento do donut */
+#image-container {
+    margin-bottom: 20px; /* Espaçamento entre a imagem e o botão */
 }
+
 
 body {
     font-family: Arial, sans-serif; 

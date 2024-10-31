@@ -1,12 +1,12 @@
-const donut = document.getElementById('donut');
+const image = document.getElementById('myImage');
+const button = document.getElementById('changeImageBtn');
 
-donut.addEventListener('click', function() {
-    // Adiciona um efeito ao clicar na rosquinha
-    donut.style.transform = 'scale(1.1)';
-    setTimeout(() => {
-        donut.style.transform = 'scale(1)';
-    }, 300);
+button.addEventListener('click', function() {
+    // Altere o caminho da imagem aqui
+    const newImage = 'caminho/para/nova/imagem.jpg';
+    image.src = newImage; // Atualiza a imagem
 });
+
 
 let intervalo;
 let emQueda = false;
