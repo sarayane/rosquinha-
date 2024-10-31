@@ -2,14 +2,16 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rosquinha Caindo</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-height, initial-scale=1.0">
+    <title>rosca</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <div class="rosca">
-        <img src="/imagem/rosca.jpg">
-    </div>
+    <div id="topo"> <!-- Div que agrupa informações e botões -->
+    <div id="objeto"></div>
+    <p id="info"></p>
+    <button id="botao" onclick="caiu()">caiu</button>
+    <button id="botaoPausa" onclick="pegar()">pegar</button>
     <script src="script.js"></script>
 </body>
 </html>
