@@ -1,58 +1,18 @@
-let intervalo;
-let emQueda = false;
-let pausado = false;
-
-function Queda() {
-    if (emQueda) {
-        comecar;
-    } else {
-        parar;
-    }
-}
-
-function iniciarQueda() {
-    const objeto = rosca.jpg('objeto');
-    let altura = 0; 
-    const g = 9.8;
-    let tempo = 5;
-    const maxAltura = 300; 
+function createDonut() {
+    const donut = document.createElement('div');
+    donut.classList.add('donut');
     
-    intervalo = setInterval(() => {
-        if (!pausado) {
-            tempo += 0.05;
-            altura = 0.5 * g * Math.pow(tempo, 2); 
-
-            if (altura > maxAltura) {
-                altura = maxAltura; 
-            }
-
-            const velocidade = g * tempo;
-            objeto.style.top = (100 + altura) + 'px'; 
-            document.getElementById('info').innerText = `Altura: ${altura.toFixed(2)} m | Tempo: ${tempo.toFixed(2)} s | Velocidade: ${velocidade.toFixed(2)} m/s`;
-            
-            if (altura >= maxAltura) {
-                clearInterval(intervalo);
-                emQueda = false;
-                document.getElementById('botao').innerText = 'Reiniciar';
-            }
-        }
-    }, 50);
-    emQueda = true;
-    document.getElementById('botao').innerText = 'Parar Queda';
+    // Posição aleatória
+    const leftPosition = Math.random() * (window.innerWidth - 100); // Ajuste para largura da rosquinha
+    donut.style.left = leftPosition + 'px';
+    
+    document.getElementById('donut-container').appendChild(donut);
+    
+    // Remove a rosquinha após a animação
+    donut.addEventListener('animationend', () => {
+        donut.remove();
+    });
 }
 
-function pausar() {
-    pausado = !pausado;
-    document.getElementById('botaoPausa').innerText = pausado ? 'Retomar' : 'Pausar';
-}
-
-function reiniciar() {
-    clearInterval(intervalo);
-    const objeto = document.getElementById('objeto');
-    objeto.style.top = '100px'; 
-    document.getElementById('info').innerText = '';
-    emQueda = false;
-    pausado = false;
-    document.getElementById('botao').innerText = 'comecar';
-    document.getElementById('botaoPausa').innerText = 'Parar';
-}
+// Cria uma nova rosquinha a cada segundo
+setInterval(createDonut, 1000);
