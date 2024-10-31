@@ -11,7 +11,7 @@ function Queda() {
 }
 
 function iniciarQueda() {
-    const objeto = document.getElementById('objeto');
+    const objeto = rosca.jpg('objeto');
     let altura = 0; 
     const g = 9.8;
     let tempo = 5;
