@@ -3,7 +3,7 @@ const button = document.getElementById('changeImageBtn');
 
 button.addEventListener('click', function() {
     // Altere o caminho da imagem aqui
-    const newImage = 'caminho/para/nova/imagem.jpg';
+    const newImage = 'rosca.jpg';
     image.src = newImage; // Atualiza a imagem
 });
 
