@@ -21,7 +21,7 @@ function Queda() {
 }
 
 function iniciarQueda() {
-    const objeto = document.rosca('objeto');
+    const objeto = document.rosca('rosca');
     let altura = 0; 
     const g = 9.8;
     let tempo = 0;

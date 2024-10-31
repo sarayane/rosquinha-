@@ -2,15 +2,16 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-height, initial-scale=1.0">
     <title>rosca</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <div id="image-container">
-        <img id="myImage" src="rosca.jpg" alt="rosca" />
-    </div>
-    <button id="changeImageBtn">atualizar</button>
+    <div id="topo"> <!-- Div que agrupa informações e botões -->
+    <div id="rosca"></div>
+    <p id="info"></p>
+    <button id="botao" onclick="Queda()">Iniciar Queda</button>
+    <button id="botaoPausa" onclick="pausar()">Pausar</button>
     <script src="script.js"></script>
 </body>
 </html>
