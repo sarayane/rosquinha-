@@ -16,11 +16,3 @@ body {
     animation: fall 4s linear forwards; /* Animação de queda */
 }
 
-@keyframes fall {
-    0% {
-        top: -100px;
-    }
-    100% {
-        top: 100vh; /* Cai até a parte inferior da tela */
-    }
-}
