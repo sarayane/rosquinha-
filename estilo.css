@@ -15,7 +15,8 @@ body {
     flex-direction: column; /* Empilha a informacao e os botoes */
     align-items: center; /* Centraliza horizontalmente */
 }
-* {
+
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -37,7 +38,7 @@ body, html {
   width: 200px; /* Defina o tamanho inicial da imagem */
   height: 100px;
   position: center;
-  top: -300px; /* Começar fora da tela, acima */
+  top: 40px; /* Começar fora da tela, acima */
   animation: fall 3s ease-in-out forwards, resize 2s ease-in-out 1s forwards;
 }
 
