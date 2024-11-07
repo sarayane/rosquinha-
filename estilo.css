@@ -21,8 +21,8 @@ body {
   }
   
   .falling-image {
-    width: 40; /* Defina o tamanho inicial da imagem */
-    height: 30px;
+    width: 90px; /* Defina o tamanho inicial da imagem */
+    height: 800px;
     position: center;
   }
     
