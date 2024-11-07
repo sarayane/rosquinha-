@@ -34,9 +34,9 @@ body, html {
   position: relative;
 }
 
-.falling-image {
-  width: 200px; /* Defina o tamanho inicial da imagem */
-  height: 100px;
+.img {
+  width: 40px; /* Defina o tamanho inicial da imagem */
+  height: 30px;
   position: center;
   top: 40px; /* Começar fora da tela, acima */
   animation: fall 3s ease-in-out forwards, resize 2s ease-in-out 1s forwards;
