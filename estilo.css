@@ -24,9 +24,9 @@ body {
   
   
   .imagem\rosca {
-    width: 200px; /* Defina o tamanho inicial da imagem */
-    height: auto;
-    position: absolute;
+    width: 30px; /* Defina o tamanho inicial da imagem */
+    height: 20px;
+    position: center;
     top: -300px; /* Começar fora da tela, acima */
     animation: fall 3s ease-in-out forwards, resize 2s ease-in-out 1s forwards;
   }
