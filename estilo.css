@@ -10,7 +10,7 @@ html, body {
   display: flex; /* Usando flexbox para centralizar o conteúdo */
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
-  background-color: #f0f0f0; /* Cor de fundo para destacar a imagem */
+  background-color: plum; /* Cor de fundo para destacar a imagem */
 }
 
 /* Estilo da imagem */
