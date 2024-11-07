@@ -15,17 +15,32 @@ body {
     flex-direction: column; /* Empilha a informacao e os botoes */
     align-items: center; /* Centraliza horizontalmente */
 }
-  
-  .container {
-    position: relative;
-  }
-  
-  .falling-image {
-    width: 90px; /* Defina o tamanho inicial da imagem */
-    height: 800px;
-    position: center;
-  }
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.container {
+  position: relative;
+}
+
+.falling-image {
+  width: 200px; /* Defina o tamanho inicial da imagem */
+  height: 100px;
+  position: center;
+  top: -300px; /* Começar fora da tela, acima */
+  animation: fall 3s ease-in-out forwards, resize 2s ease-in-out 1s forwards;
+}
+
 
   
  
